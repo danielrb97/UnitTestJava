@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("unit testing"){
             steps{
-                dir("UnitTestJava"){
+                dir("UnitTestJava/JavaTesting"){
                     sh "mvn clean compile test"
                 }
             }
